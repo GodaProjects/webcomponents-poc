@@ -80,8 +80,12 @@ module.exports = ({ mode, presets }) => {
           }
         ]
       },
-      plugins
+      plugins,
+      devServer: {
+        watchContentBase: true,
+      }
     },
+    
     modeConfig({ mode, presets }),
     loadPresets({ mode, presets })
   );
