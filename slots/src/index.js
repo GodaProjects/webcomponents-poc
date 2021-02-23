@@ -21,6 +21,7 @@ class MyApp extends LitElement {
             <div class="header">
                 Header
                 <slot></slot>
+                <slot name="named-slot"></slot>
             </div>
             <div class="container">
                 Container
